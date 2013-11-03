@@ -1,31 +1,24 @@
-<h1>Listing goals</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Compeleted at</th>
-      <th>Description</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @goals.each do |goal| %>
-      <tr>
-        <td><%= goal.title %></td>
-        <td><%= goal.compeleted_at %></td>
-        <td><%= goal.description %></td>
-        <td><%= link_to 'Show', goal %></td>
-        <td><%= link_to 'Edit', edit_goal_path(goal) %></td>
-        <td><%= link_to 'Destroy', goal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+<div class="column">
+<h2>Things to Do</h2>
+    <% @pending_goals.each do |goal| %>
+      <div class="goal">
+        <%= link_to goal.title, goal %> 
+        <%= link_to "Mark Complete", mark_completed_path(goal) %>
+      </div>
     <% end %>
-  </tbody>
-</table>
+</div>
 
-<br>
+<div class="column">
+<h2>Things I've Done</h2>
+    <% @completed_goals.each do |goal| %>
+      <div class="goal completed">
+        <%= goal.title %>
+        <%= goal.description %>
+        <%= link_to 'Show', goal %>
+        <%= link_to 'Edit', edit_goal_path(goal) %>
+        <%= link_to 'Destroy', goal, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    <% end %>
 
+  </div>
 <%= link_to 'New Goal', new_goal_path %>

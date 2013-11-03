@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20131102213928) do
 
   create_table "goals", force: true do |t|
     t.string   "title"
-    t.datetime "compeleted_at"
+    t.datetime "completed_at"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"

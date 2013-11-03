@@ -1,10 +1,11 @@
 class GoalsController < ApplicationController
-  before_action :set_goal, only: [:show, :edit, :update, :destroy]
+  before_action :set_goal, only: [:show, :edit, :update, :destroy, :mark_completed]
 
   # GET /goals
   # GET /goals.json
   def index
-    @goals = Goal.all
+    @pending_goals = Goal.where(completed_at: nil)
+    @completed_goals = Goal.order(completed_at: :asc).where("completed_at IS NOT NULL").sort
   end
 
   # GET /goals/1
@@ -28,7 +29,7 @@ class GoalsController < ApplicationController
 
     respond_to do |format|
       if @goal.save
-        format.html { redirect_to @goal, notice: 'Goal was successfully created.' }
+        format.html { redirect_to goals_path, notice: 'Goal was successfully created.' }
         format.json { render action: 'show', status: :created, location: @goal }
       else
         format.html { render action: 'new' }
@@ -61,6 +62,12 @@ class GoalsController < ApplicationController
     end
   end
 
+  def mark_completed
+    @goal.completed_at = DateTime.now
+    @goal.save
+    redirect_to goals_path
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_goal
@@ -69,6 +76,6 @@ class GoalsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def goal_params
-      params.require(:goal).permit(:title, :compeleted_at, :description)
+      params.require(:goal).permit(:title, :completed_at, :description)
     end
 end
