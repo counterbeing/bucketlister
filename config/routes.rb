@@ -8,6 +8,7 @@ Bucketlister::Application.routes.draw do
   root 'goals#index'
 
   get 'goals/:id/mark_completed' => "goals#mark_completed", as: :mark_completed
+  get 'goals/:id/mark_incomplete' => "goals#mark_completed", as: :mark_incomplete
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

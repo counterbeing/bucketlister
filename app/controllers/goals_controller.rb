@@ -68,6 +68,13 @@ class GoalsController < ApplicationController
     redirect_to goals_path
   end
 
+  def mark_incomplete
+    @goal.completed_at = nil
+    @goal.save
+    redirect_to goals_path
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_goal

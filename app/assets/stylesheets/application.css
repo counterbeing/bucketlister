@@ -12,28 +12,3 @@
  *= require_tree .
  */
 
-@font-face {
-  font-family: 'Share Tech';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Share Tech'), local('ShareTech-Regular'), url(http://themes.googleusercontent.com/static/fonts/sharetech/v1/riJWcvd3sYdxJpiCWZvUGL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
-      }
-
-body{
-color: #8C3A2B;
- font-family: 'Share Tech', sans-serif; 
- background-color: #EE6952;
-}
-
-#container{
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-.column{
-  width: 50%;
-  float: left;
-}
-
