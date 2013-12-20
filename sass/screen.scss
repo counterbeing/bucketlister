@@ -1,0 +1,119 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+
+@font-face {
+  font-family: 'Share Tech';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Share Tech'), local('ShareTech-Regular'), url(http://themes.googleusercontent.com/static/fonts/sharetech/v1/riJWcvd3sYdxJpiCWZvUGL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+      }
+
+body{
+color: #8C3A2B;
+ font-family: 'Share Tech', sans-serif; 
+ background-color: #EE6952;
+}
+
+
+h2{
+  font-size: 40px;
+  text-transform: uppercase;
+}
+h3{
+  font-size: 30px;
+  text-transform: uppercase;
+}
+#container{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  overflow: auto;
+}
+
+ .goal a{
+   text-decoration: none;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: white;
+  font-size: 30px;
+  line-height: 35px;
+}
+.completed{
+  text-decoration: line-through;
+}
+
+a.mark-it{ font-size: 15px; text-decoration: none;}
+
+.column{
+  width: 50%;
+  float: left;
+}
+
+$circleDiameter: 200px;
+$circleRadius: $circleDiameter/2;
+.circle{
+  width: $circleDiameter;
+  height: $circleDiameter;
+  @include border-radius($circleRadius);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 5px solid white;
+  margin-top: 20px;
+}
+
+#title-box{
+  text-align: center;
+  width: 220px;
+  display: inline-block;
+  float: left;
+}
+
+#stats-box{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#info-bar{
+  background-color: #222222;
+  overflow: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.side-pads{
+  width: 80%;
+  margin: auto;
+}
+
+input[type="text"]{
+  width: 90%;
+  border: 0px;
+  color: white;
+  background-color: #222222;
+ font-family: 'Share Tech', sans-serif; 
+ height: 40px;
+ font-size: 30px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+textarea{
+  width: 90%;
+  border: 0px;
+  color: white;
+  background-color: #222222;
+  font-family: 'Share Tech', sans-serif; 
+  height: 150px;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}

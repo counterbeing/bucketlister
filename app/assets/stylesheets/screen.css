@@ -1,0 +1,203 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../.rbenv/versions/2.0.0-p247/lib/ruby/gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'Share Tech';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Share Tech"), local("ShareTech-Regular"), url(http://themes.googleusercontent.com/static/fonts/sharetech/v1/riJWcvd3sYdxJpiCWZvUGL3hpw3pgy2gAi-Ip7WPMi0.woff) format("woff");
+}
+
+/* line 17, ../../../sass/screen.scss */
+body {
+  color: #8C3A2B;
+  font-family: 'Share Tech', sans-serif;
+  background-color: #EE6952;
+}
+
+/* line 24, ../../../sass/screen.scss */
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+/* line 28, ../../../sass/screen.scss */
+h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+/* line 32, ../../../sass/screen.scss */
+#container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  overflow: auto;
+}
+
+/* line 40, ../../../sass/screen.scss */
+.goal a {
+  text-decoration: none;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  color: white;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+/* line 48, ../../../sass/screen.scss */
+.completed {
+  text-decoration: line-through;
+}
+
+/* line 52, ../../../sass/screen.scss */
+a.mark-it {
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/* line 54, ../../../sass/screen.scss */
+.column {
+  width: 50%;
+  float: left;
+}
+
+/* line 61, ../../../sass/screen.scss */
+.circle {
+  width: 200px;
+  height: 200px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 5px solid white;
+  margin-top: 20px;
+}
+
+/* line 72, ../../../sass/screen.scss */
+#title-box {
+  text-align: center;
+  width: 220px;
+  display: inline-block;
+  float: left;
+}
+
+/* line 79, ../../../sass/screen.scss */
+#stats-box {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 84, ../../../sass/screen.scss */
+#info-bar {
+  background-color: #222222;
+  overflow: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* line 90, ../../../sass/screen.scss */
+.side-pads {
+  width: 80%;
+  margin: auto;
+}
+
+/* line 95, ../../../sass/screen.scss */
+input[type="text"] {
+  width: 90%;
+  border: 0px;
+  color: white;
+  background-color: #222222;
+  font-family: 'Share Tech', sans-serif;
+  height: 40px;
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 108, ../../../sass/screen.scss */
+textarea {
+  width: 90%;
+  border: 0px;
+  color: white;
+  background-color: #222222;
+  font-family: 'Share Tech', sans-serif;
+  height: 150px;
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
