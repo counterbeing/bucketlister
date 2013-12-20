@@ -1,11 +1,12 @@
 class GoalsController < ApplicationController
-  before_action :set_goal, only: [:show, :edit, :update, :destroy, :mark_completed]
+  before_action :set_goal, only: [:show, :edit, :update, :destroy, :mark_completed, :mark_incomplete]
 
   # GET /goals
   # GET /goals.json
   def index
     @pending_goals = Goal.where(completed_at: nil)
-    @completed_goals = Goal.order(completed_at: :asc).where("completed_at IS NOT NULL").sort
+    @completed_goals = Goal.order('completed_at desc').where("completed_at IS NOT NULL")
+    @goal = Goal.new
   end
 
   # GET /goals/1

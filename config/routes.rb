@@ -8,7 +8,12 @@ Bucketlister::Application.routes.draw do
   root 'goals#index'
 
   get 'goals/:id/mark_completed' => "goals#mark_completed", as: :mark_completed
-  get 'goals/:id/mark_incomplete' => "goals#mark_completed", as: :mark_incomplete
+  get 'goals/:id/mark_incomplete' => "goals#mark_incomplete", as: :mark_incomplete
+
+
+  get 'auth/:provider/callback', to: 'sessions#create'
+  get 'auth/failure', to: redirect('/')
+  get 'signout', to: 'sessions#destroy', as: 'signout'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

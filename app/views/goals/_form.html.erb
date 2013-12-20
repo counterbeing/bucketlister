@@ -12,12 +12,10 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.text_field :title, class: "goal", placeholder: "Your goal goes here." %>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
-    <%= f.text_area :description %>
+    <%= f.text_area :description, placeholder: "What exactly do you have to do to call it 'accomplished'?" %>
   </div>
   <div class="actions">
     <%= f.submit %>
