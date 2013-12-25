@@ -4,10 +4,18 @@ class GoalsController < ApplicationController
   # GET /goals
   # GET /goals.json
   def index
+    @goals =  Goal.all
+    #@pending_goals = Goal.where(completed_at: nil)
+    #@completed_goals = Goal.order('completed_at desc').where("completed_at IS NOT NULL")
+    #@goal = Goal.new
+  end
+
+  def index_plain
     @pending_goals = Goal.where(completed_at: nil)
     @completed_goals = Goal.order('completed_at desc').where("completed_at IS NOT NULL")
     @goal = Goal.new
   end
+
 
   # GET /goals/1
   # GET /goals/1.json

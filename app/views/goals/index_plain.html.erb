@@ -1,0 +1,21 @@
+<div class="column">
+  <h2>Things to Do</h2>
+  <%= render 'form' %>
+  <% @pending_goals.each do |goal| %>
+    <div class="goal">
+      <%= link_to goal.title, goal %> 
+      <%= link_to "Mark Complete", mark_completed_path(goal), class: "mark-it" %>
+    </div>
+  <% end %>
+</div>
+
+<div class="column">
+  <h2>Things I've Done</h2>
+  <% @completed_goals.each do |goal| %>
+    <div class="goal completed">
+      <%= link_to goal.title, goal %> 
+      <%= link_to "Mark Inomplete", mark_incomplete_path(goal), class: "mark-it" %>
+    </div>
+<% end %>
+
+  </div>

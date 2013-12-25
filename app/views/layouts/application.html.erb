@@ -3,15 +3,11 @@
 <head>
   <title>Bucketlister</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
-  <!--[if IE]>
-      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-      <![endif]-->
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <% if false %><!-- commented out for dev ease -->
   <div id="info-bar"> 
     <div class="side-pads">
       <div id="title-box">
@@ -22,8 +18,9 @@
         <span class="stat">XNumber</span>
         <a href="/auth/facebook" id="fb_login_link">Login with Facebook</a>
       </div><!-- end #stats-box -->
-    </div>
+    </div><!-- end side-pads -->
   </div>
+<% end %>
    
   <div id="container">
     <%= yield %>

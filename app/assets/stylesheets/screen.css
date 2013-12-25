@@ -201,3 +201,8 @@ textarea {
   margin-top: 0px;
   margin-bottom: 20px;
 }
+
+/* line 121, ../../../sass/screen.scss */
+#incomplete-goals {
+  background-color: blue;
+}

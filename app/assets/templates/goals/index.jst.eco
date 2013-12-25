@@ -1,0 +1,21 @@
+<form accept-charset="UTF-8" class="new_goal" id="new_goal" method="post">
+<div class="field">
+<input class="goal" id="goal_title" name="goal[title]" placeholder="Your goal goes here." type="text" />
+</div>
+<div class="field">
+<textarea id="goal_description" name="goal[description]" placeholder="What exactly do you have to do to call it &#39;accomplished&#39;?">
+</textarea>
+</div>
+<div class="actions">
+<input name="commit" type="submit" value="Create Goal" />
+</form>
+
+<div>
+
+<div id="incomplete-goals">
+</div>
+
+<div id="completed-goals">
+</div>
+
+
