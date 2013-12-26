@@ -1,0 +1,1 @@
+<%= @goal.get('title') %> <a href="#" class="mark-it">Mark Incomplete</a>
