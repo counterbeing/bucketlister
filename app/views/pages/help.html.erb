@@ -1,0 +1,37 @@
+<% 
+md = <<-eos
+
+## Support
+If you run into issues, I'd love to know about them. Feel free to shoot me an email at <a href="mailto:cory@counterbeing.com">cory@counterbeing.com</a> and I'll see what I can do.
+
+
+## API, There Is One
+But there's no documentation on it yet. The front end is built on backbone, then backend on rails. The point of this is mostly that you can use whatever of your own data, wherever you want on the internet. At some point soon, all accounts will have API keys, allowing them to retrieve JSON.
+
+This was one of the main reasons I felt we needed a new bucket list app. I don't want my life goals to be just listed on someone else's site. I wnant ot be able to embed them wherever. 
+
+
+## Change Log
+#### Dec 27, 2013
+Adding in basic functionality for facebook login, goal storage, and user interface. Getting ready for initial release. 
+
+
+## Future Features
+
+- Nested goals with progress indication
+- Sortability of goals
+- Facebook Comments
+- Ability to have secret goals
+- Timeline of accomplishments
+
+eos
+ %>
+
+ <div id="table-of-contents">
+ <h3> Table of Contents</h3>
+ <%= markdown_toc md %>
+ </div>
+
+ <div id="contents">
+   <%= markdown md %>
+ </div>

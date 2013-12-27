@@ -22,10 +22,14 @@ color: #8C3A2B;
 
 
 h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 40px;
   text-transform: uppercase;
 }
 h3{
+  margin-top: 20px;
+  margin-bottom: 10px;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -34,9 +38,19 @@ h3{
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  overflow: auto;
+  //overflow: auto;
 }
 
+p{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+ 
  .goal a{
    text-decoration: none;
   margin-bottom: 15px;
@@ -45,7 +59,7 @@ h3{
   font-size: 30px;
   line-height: 35px;
 }
-.completed{
+#completed-goals{
   text-decoration: line-through;
 }
 
@@ -120,4 +134,16 @@ textarea{
 
 #incomplete-goals{
   background-color: #e04429;
+}
+
+#table-of-contents{
+  float: left;
+  max-width: 30%; 
+  margin-right: 40px;
+
+}
+
+#contents{
+  max-width: 60%;
+  float: left;
 }

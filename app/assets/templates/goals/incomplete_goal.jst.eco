@@ -1,1 +1,3 @@
-<%= @goal.get('title') %> <a href="#" class="mark-it">Mark Completed</a>
+<%= @goal.get('title') %> 
+<a data-id="<%= @goal.get('id') %>" href="#" class="complete-it">check</a> 
+<a href="#" class="edit-it">edit</a>

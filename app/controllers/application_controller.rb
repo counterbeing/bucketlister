@@ -7,8 +7,8 @@ class ApplicationController < ActionController::Base
   private
 
   def require_login
-    unless current_user
-      redirect_to login_url
+    unless current_user || self.controller_name == "sessions"
+      redirect_to page_path('login')
     end
   end
 

@@ -8,8 +8,11 @@ gem 'pg'
 #For static pages, such as facebook login page
 gem 'high_voltage'
 
+gem 'quiet_assets', :group => :development
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+gem 'redcarpet' , :git => 'git://github.com/vmg/redcarpet.git'
 gem "compass-rails"
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bucketlister</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="info-bar"> 
+    <div class="side-pads">
+      <div id="title-box">
+        <h2>BUCKETLISTr</h2>
+      </div><!-- end #title box -->
+      <div id="stats-box">
+        
+      </div><!-- end #stats-box -->
+    </div><!-- end side-pads -->
+  </div>
+   
+  <div id="container">
+    <%= yield %>
+  </div>
+
+</body>
+</html>
