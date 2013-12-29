@@ -13,14 +13,16 @@
         <h2>BUCKETLISTr</h2>
         <div class="circle" style="background-image: url('<%= profile_pic_url(200, 200) %>');"></div>
       </div><!-- end #title box -->
-      <div id="stats-box">
+      <nav id="top-nav">
         <% if current_user %>
           <strong><%= current_user.name %></strong>
-          <%= link_to "Sign out", signout_path, id: "sign_out" %>
+          <a href="/help" class="button">Help</a>
+          <a href="/share" class="button">Share</a>
+          <%= link_to "Sign out", signout_path, id: "sign_out", class: "button" %>
         <% else %>
           <a href="/auth/facebook" id="fb_login_link">Login with Facebook</a>
         <% end %>
-      </div><!-- end #stats-box -->
+      </nav><!-- end #stats-box -->
       <div id="goal-stats">GOALSTATS</div>
     </div><!-- end side-pads -->
   </div>

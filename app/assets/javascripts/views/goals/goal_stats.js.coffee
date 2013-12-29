@@ -7,6 +7,6 @@ class Bucketlister.Views.GoalStats extends Backbone.View
   render: -> 
     incomplete = @collection.filterIncomplete().length
     complete = @collection.filterComplete().length
-    $(@el).html(@template([collection: incomplete, complete: complete]))
+    $(@el).html(@template(incomplete: incomplete, complete: complete))
     @
 

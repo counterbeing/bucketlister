@@ -1,3 +1,9 @@
+## Broad Overview
+
+Long term goal tracking software, with facebook abilities, and a backbone.js front end that makes it feel smoother than others. Still very much alpha, and not yet released.
+
+![mockup photo]('public/bucketlister_mockup.jpg')
+
 ## Why make this?
 
 My life to do list is one of my most powerful tools to combat malaise, and envite what I want into my life. Somehow just having the clarity of knowing that I've thought about what I want makes me happier, and more productive. It could be on a napkin, but, I think this is slightly better.

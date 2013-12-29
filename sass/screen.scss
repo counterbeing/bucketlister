@@ -7,6 +7,14 @@
 @import "compass/css3";
 @import "compass/utilities";
 
+
+// All my favorite colors
+$notBlack: #222222;
+$darkRed: #8C3A2B;
+$brightRed: #EE6952;
+
+
+
 @font-face {
   font-family: 'Share Tech';
   font-style: normal;
@@ -15,9 +23,9 @@
       }
 
 body{
-color: #8C3A2B;
+color: $darkRed;
  font-family: 'Share Tech', sans-serif; 
- background-color: #EE6952;
+ background-color: $brightRed;
 }
 
 
@@ -90,13 +98,13 @@ $circleRadius: $circleDiameter/2;
   float: left;
 }
 
-#stats-box{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+#top-nav{
+  position: absolute;
+  right: 0px;
+  top: 30px;
 }
 #info-bar{
-  background-color: #222222;
+  background-color: $notBlack;
   overflow: auto;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -104,13 +112,14 @@ $circleRadius: $circleDiameter/2;
 .side-pads{
   width: 80%;
   margin: auto;
+  position: relative;
 }
 
 input[type="text"]{
   width: 90%;
   border: 0px;
   color: white;
-  background-color: #222222;
+  background-color: $notBlack;
  font-family: 'Share Tech', sans-serif; 
  height: 40px;
  font-size: 30px;
@@ -123,7 +132,7 @@ textarea{
   width: 90%;
   border: 0px;
   color: white;
-  background-color: #222222;
+  background-color: $notBlack;
   font-family: 'Share Tech', sans-serif; 
   height: 150px;
   font-size: 20px;
@@ -132,9 +141,6 @@ textarea{
   margin-bottom: 20px;
 }
 
-#incomplete-goals{
-  background-color: #e04429;
-}
 
 #table-of-contents{
   float: left;
@@ -146,4 +152,40 @@ textarea{
 #contents{
   max-width: 60%;
   float: left;
+}
+
+.button{
+  color: $brightRed;
+  border: 1px solid $brightRed;
+  padding: 5px;
+  margin: 0px 5px 0px 5px;
+}
+
+
+
+#goal-stats{
+  margin-top: 100px;
+  text-transform: uppercase;
+  font-size: 30px;
+  position: absolute;
+  right: 0px;
+  color: $brightRed;
+  div {
+    cursor: pointer;
+    margin: 10px 0px 10px 0px;
+  }
+  .circle-stat{
+    margin-right: 10px;
+    font-size: 40px;
+    $circleDiameter: 60px;
+    display: inline-block;
+    width: $circleDiameter;
+    height: $circleDiameter;
+    line-height: $circleDiameter;
+    text-align: center;
+    border-radius: $circleDiameter/2;
+    top: -20px;
+    background-color: $brightRed;
+    color: white;
+  }
 }
