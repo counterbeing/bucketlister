@@ -2,7 +2,7 @@
 
 Long term goal tracking software, with facebook abilities, and a backbone.js front end that makes it feel smoother than others. Still very much alpha, and not yet released.
 
-![mockup photo]('public/bucketlister_mockup.jpg')
+![mockup photo]('https://raw.github.com/counterbeing/bucketlister/master/public/bucketlister_mockup.jpg')
 
 ## Why make this?
 
