@@ -1,0 +1,55 @@
+{
+  "checksum": {
+    "previous": "5c41e9bc16555cd4f3f28a9d53228bdbdaa02b52af24ffcc828653760d4fbfe0",
+    "current": "5c41e9bc16555cd4f3f28a9d53228bdbdaa02b52af24ffcc828653760d4fbfe0"
+  },
+  "fonts": [
+    "app/assets/fonts/fontcustom_5c41e9bc16555cd4f3f28a9d53228bdb.ttf",
+    "app/assets/fonts/fontcustom_5c41e9bc16555cd4f3f28a9d53228bdb.svg",
+    "app/assets/fonts/fontcustom_5c41e9bc16555cd4f3f28a9d53228bdb.woff",
+    "app/assets/fonts/fontcustom_5c41e9bc16555cd4f3f28a9d53228bdb.eot"
+  ],
+  "glyphs": {
+    "check": {
+      "codepoint": 61696,
+      "source": "app/assets/fonts/vectors/check.svg"
+    },
+    "circle-open": {
+      "codepoint": 61697,
+      "source": "app/assets/fonts/vectors/circle-open.svg"
+    },
+    "pencil": {
+      "codepoint": 61699,
+      "source": "app/assets/fonts/vectors/pencil.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_name": "fontcustom",
+    "force": false,
+    "input": {
+      "templates": "app/assets/fonts/vectors",
+      "vectors": "app/assets/fonts/vectors"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "app/assets/stylesheets",
+      "fonts": "app/assets/fonts",
+      "preview": "app/views/styleguide"
+    },
+    "preprocessor_path": "",
+    "quiet": false,
+    "skip_first": false,
+    "templates": [
+      "scss",
+      "preview"
+    ]
+  },
+  "templates": [
+    "app/assets/stylesheets/_fontcustom.scss",
+    "app/views/styleguide/fontcustom-preview.html"
+  ]
+}

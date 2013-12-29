@@ -3,7 +3,6 @@ class Bucketlister.Views.GoalsIndex extends Backbone.View
 
   events: 
     'submit #new_goal': 'createGoal'
-    'click .mark-it': 'markGoal'
 
   initialize: -> 
     @collection.on('reset', @render, @)

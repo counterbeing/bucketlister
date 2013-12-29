@@ -1,20 +1,17 @@
 class Bucketlister.Routers.Goals extends Backbone.Router
   routes:
-    '': 'index'
-    '_=_': 'index' # facebook appends this after auth, like an idiot
+    '': 'thingsToDo'
+    '_=_': 'thingsToDo' # facebook appends this after auth, like an idiot
     'goals/:id': 'show'
 
   initialize: ->
     @collection = new Bucketlister.Collections.Goals()
     @collection.fetch({reset: true})
+    new Bucketlister.Views.GoalStats(collection: @collection)
 
-  index: ->
+  thingsToDo: ->
     view = new Bucketlister.Views.GoalsIndex(collection: @collection)
     $(".column .to-do").html(view.render().el) 
-
-    
-    # done_view = new Bucketlister.Views.GoalsIndex(collection: @completed_goals)
-    # $(".column .done").html(done_view.render().el) 
 
   show: (id) ->
     alert "showing #{id}"
