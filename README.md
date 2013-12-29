@@ -2,6 +2,12 @@
 
 Long term goal tracking software, with facebook abilities, and a backbone.js front end that makes it feel smoother than others. Still very much alpha, and not yet released.
 
+### Primary Concerns
+- Easy input
+- Social integration so that friends can share goals and encouragement
+- Ability to use the goal data on other websites
+- Completed goals should be kept as trophies, rather than just deleted
+
 ![mockup photo](https://raw.github.com/counterbeing/bucketlister/master/public/bucketlister_mockup.jpg)
 
 ## Why make this?
@@ -17,10 +23,10 @@ There are other apps out there, but somehow, they weren't quite what I was looki
 ## API, There Is One
 But there's no documentation on it yet. The front end is built on backbone, then backend on rails. The point of this is mostly that you can use whatever of your own data, wherever you want on the internet. At some point soon, all accounts will have API keys, allowing them to retrieve JSON.
 
-This was one of the main reasons I felt we needed a new bucket list app. I don't want my life goals to be just listed on someone else's site. I wnant ot be able to embed them wherever. 
+This was one of the main reasons I felt we needed a new bucket list app. I don't want my life goals to be just listed on someone else's site. I want ot be able to embed them wherever. 
 
 ## Support
-If you run into issues, I'd love to know about them. Feel free to shoot me an email at <a href="mailto:cory@counterbeing.com">cory@counterbeing.com</a> and I'll see what I can do.
+If you run into issues, I'd love to know about them. Feel free to shoot me an email at <a href="mailto:cory@counterbeing.com">cory@counterbeing.com</a> and I'll see what I can do, but if you feel like being super cool please create [an issue on github](https://github.com/counterbeing/bucketlister/issues).
 
 
 ## Github Info
