@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "5c41e9bc16555cd4f3f28a9d53228bdbdaa02b52af24ffcc828653760d4fbfe0",
-    "current": "5c41e9bc16555cd4f3f28a9d53228bdbdaa02b52af24ffcc828653760d4fbfe0"
+    "previous": "6f29ebcd178fc871bd4b216efb46bad1f6ab3d42c0794268df0e5cf72acc34e8",
+    "current": "6f29ebcd178fc871bd4b216efb46bad1f6ab3d42c0794268df0e5cf72acc34e8"
   },
   "fonts": [
-    "app/assets/fonts/fontcustom_5c41e9bc16555cd4f3f28a9d53228bdb.ttf",
-    "app/assets/fonts/fontcustom_5c41e9bc16555cd4f3f28a9d53228bdb.svg",
-    "app/assets/fonts/fontcustom_5c41e9bc16555cd4f3f28a9d53228bdb.woff",
-    "app/assets/fonts/fontcustom_5c41e9bc16555cd4f3f28a9d53228bdb.eot"
+    "app/assets/fonts/fontcustom_6f29ebcd178fc871bd4b216efb46bad1.ttf",
+    "app/assets/fonts/fontcustom_6f29ebcd178fc871bd4b216efb46bad1.svg",
+    "app/assets/fonts/fontcustom_6f29ebcd178fc871bd4b216efb46bad1.woff",
+    "app/assets/fonts/fontcustom_6f29ebcd178fc871bd4b216efb46bad1.eot"
   ],
   "glyphs": {
     "check": {
@@ -21,6 +21,10 @@
     "pencil": {
       "codepoint": 61699,
       "source": "app/assets/fonts/vectors/pencil.svg"
+    },
+    "x": {
+      "codepoint": 61700,
+      "source": "app/assets/fonts/vectors/x.svg"
     }
   },
   "options": {
@@ -42,7 +46,6 @@
     },
     "preprocessor_path": "",
     "quiet": false,
-    "skip_first": false,
     "templates": [
       "scss",
       "preview"

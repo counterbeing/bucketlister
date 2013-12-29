@@ -122,34 +122,34 @@ a {
   text-decoration: none;
 }
 
-/* line 68, ../../../sass/screen.scss */
-.goal a {
+/* line 69, ../../../sass/screen.scss */
+.goal {
   text-decoration: none;
   margin-bottom: 15px;
   margin-top: 15px;
   color: white;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 25px;
 }
 
-/* line 76, ../../../sass/screen.scss */
+/* line 77, ../../../sass/screen.scss */
 #completed-goals {
   text-decoration: line-through;
 }
 
-/* line 80, ../../../sass/screen.scss */
+/* line 81, ../../../sass/screen.scss */
 a.mark-it {
   font-size: 15px;
   text-decoration: none;
 }
 
-/* line 82, ../../../sass/screen.scss */
+/* line 83, ../../../sass/screen.scss */
 .column {
   width: 50%;
   float: left;
 }
 
-/* line 89, ../../../sass/screen.scss */
+/* line 90, ../../../sass/screen.scss */
 .circle {
   width: 200px;
   height: 200px;
@@ -165,7 +165,7 @@ a.mark-it {
   margin-top: 20px;
 }
 
-/* line 100, ../../../sass/screen.scss */
+/* line 101, ../../../sass/screen.scss */
 #title-box {
   text-align: center;
   width: 220px;
@@ -173,14 +173,14 @@ a.mark-it {
   float: left;
 }
 
-/* line 107, ../../../sass/screen.scss */
+/* line 108, ../../../sass/screen.scss */
 #top-nav {
   position: absolute;
   right: 0px;
   top: 30px;
 }
 
-/* line 112, ../../../sass/screen.scss */
+/* line 113, ../../../sass/screen.scss */
 #info-bar {
   background-color: #222222;
   overflow: auto;
@@ -188,14 +188,14 @@ a.mark-it {
   padding-bottom: 50px;
 }
 
-/* line 118, ../../../sass/screen.scss */
+/* line 119, ../../../sass/screen.scss */
 .side-pads {
   width: 80%;
   margin: auto;
   position: relative;
 }
 
-/* line 124, ../../../sass/screen.scss */
+/* line 125, ../../../sass/screen.scss */
 input[type="text"] {
   width: 90%;
   border: 0px;
@@ -209,7 +209,7 @@ input[type="text"] {
   margin-bottom: 20px;
 }
 
-/* line 137, ../../../sass/screen.scss */
+/* line 138, ../../../sass/screen.scss */
 textarea {
   width: 90%;
   border: 0px;
@@ -223,32 +223,32 @@ textarea {
   margin-bottom: 20px;
 }
 
-/* line 151, ../../../sass/screen.scss */
+/* line 152, ../../../sass/screen.scss */
 #table-of-contents {
   float: left;
   max-width: 30%;
   margin-right: 40px;
 }
 
-/* line 158, ../../../sass/screen.scss */
+/* line 159, ../../../sass/screen.scss */
 #contents {
   max-width: 60%;
   float: left;
 }
 
-/* line 163, ../../../sass/screen.scss */
+/* line 164, ../../../sass/screen.scss */
 .button {
   color: #ee6952;
   border: 1px solid #ee6952;
-  padding: 5px;
+  padding: 2px 5px 2px 5px;
   margin: 0px 5px 0px 5px;
 }
-/* line 168, ../../../sass/screen.scss */
+/* line 169, ../../../sass/screen.scss */
 .button:hover {
   color: white;
 }
 
-/* line 175, ../../../sass/screen.scss */
+/* line 176, ../../../sass/screen.scss */
 #goal-stats {
   margin-top: 100px;
   text-transform: uppercase;
@@ -257,12 +257,12 @@ textarea {
   right: 0px;
   color: #ee6952;
 }
-/* line 182, ../../../sass/screen.scss */
+/* line 183, ../../../sass/screen.scss */
 #goal-stats div {
   cursor: pointer;
   margin: 10px 0px 10px 0px;
 }
-/* line 186, ../../../sass/screen.scss */
+/* line 187, ../../../sass/screen.scss */
 #goal-stats .circle-stat {
   margin-right: 10px;
   font-size: 40px;

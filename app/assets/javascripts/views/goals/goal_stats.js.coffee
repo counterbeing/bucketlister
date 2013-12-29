@@ -2,7 +2,7 @@ class Bucketlister.Views.GoalStats extends Backbone.View
   template: JST['goals/goal_stats']
   el: "#goal-stats"
   initialize: -> 
-    @collection.on 'reset', @render, @      
+    @collection.on 'reset remove', @render, @      
 
   render: -> 
     incomplete = @collection.filterIncomplete().length

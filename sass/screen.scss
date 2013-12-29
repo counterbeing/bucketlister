@@ -64,14 +64,15 @@ a{
   color: white;
   text-decoration: none;
 }
+
  
- .goal a{
-   text-decoration: none;
+ .goal{
+  text-decoration: none;
   margin-bottom: 15px;
   margin-top: 15px;
   color: white;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 20px;
+  line-height: 25px;
 }
 #completed-goals{
   text-decoration: line-through;
@@ -163,7 +164,7 @@ textarea{
 .button{
   color: $brightRed;
   border: 1px solid $brightRed;
-  padding: 5px;
+  padding: 2px 5px 2px 5px;
   margin: 0px 5px 0px 5px;
   &:hover{
     color: white;

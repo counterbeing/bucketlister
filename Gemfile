@@ -9,6 +9,7 @@ gem 'pg'
 gem 'high_voltage'
 
 gem 'quiet_assets', :group => :development
+gem 'fontcustom', :group => :development
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

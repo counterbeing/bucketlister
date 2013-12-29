@@ -2,6 +2,7 @@ class Bucketlister.Routers.Goals extends Backbone.Router
   routes:
     '': 'thingsToDo'
     '_=_': 'thingsToDo' # facebook appends this after auth, like an idiot
+    'done': 'thingsDone'
     'goals/:id': 'show'
 
   initialize: ->
