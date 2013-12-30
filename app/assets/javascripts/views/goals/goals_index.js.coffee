@@ -9,6 +9,7 @@ class Bucketlister.Views.GoalsIndex extends Backbone.View
     @collection.on('add', @appendIncompleteGoal, @)
 
   render: -> 
+    $("#goals-list").html('')
     incomplete = @collection.filterIncomplete()
     #complete = @collection.filterComplete()
     $(@el).html(@template())
@@ -23,8 +24,8 @@ class Bucketlister.Views.GoalsIndex extends Backbone.View
 
   appendIncompleteGoal: (goal) ->
     view = new Bucketlister.Views.IncompleteGoal(model: goal)
-    $("#incomplete-goals").append(view.render().el)
+    $("#goals-list").append(view.render().el)
 
   appendCompleteGoal: (goal) ->
     view = new Bucketlister.Views.CompleteGoal(model: goal)
-    $("#completed-goals").append(view.render().el)
+    $("#goals-list").append(view.render().el)

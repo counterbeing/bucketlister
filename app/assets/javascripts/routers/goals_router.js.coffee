@@ -12,7 +12,12 @@ class Bucketlister.Routers.Goals extends Backbone.Router
 
   thingsToDo: ->
     view = new Bucketlister.Views.GoalsIndex(collection: @collection)
-    $(".column .to-do").html(view.render().el) 
+    $(".column .goals").html(view.render().el) 
+
+  thingsDone: ->
+    view = new Bucketlister.Views.CompleteGoalsIndex(collection: @collection)
+    $(".column .goals").html(view.render().el) 
+
 
   show: (id) ->
     alert "showing #{id}"

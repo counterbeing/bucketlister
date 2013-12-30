@@ -1,7 +1,6 @@
-<div id="incomplete-goals">
+<h2><i class="icon-plus create-new-goal"></i> Things To Do</h2>
+<div id="goals-list">
 </div>
 
-<div id="completed-goals">
-</div>
 
 

@@ -34,6 +34,7 @@ h2{
   margin-bottom: 10px;
   font-size: 40px;
   text-transform: uppercase;
+  i{ color: white;}
 }
 h3{
   margin-top: 20px;
@@ -68,11 +69,17 @@ a{
  
  .goal{
   text-decoration: none;
-  margin-bottom: 15px;
-  margin-top: 15px;
+  padding: 5px 0px 5px 0px;
   color: white;
   font-size: 20px;
   line-height: 25px;
+  .icon{
+    color: $brightRed;
+    cursor: pointer;
+  }
+  &:hover > i{
+    color: $darkRed;
+  }
 }
 #completed-goals{
   text-decoration: line-through;
@@ -198,4 +205,26 @@ textarea{
     background-color: $brightRed;
     color: white;
   }
+}
+
+#detail{
+  background-color: $darkRed;
+  min-height: 100px;
+}
+
+
+#dark-zone{
+  position: absolute;
+  z-index: -100;
+  width: 50%;
+  height: 100%;
+  top:0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: $darkRed;
+  min-height: 100px;
+}
+
+.create-new-goal{
+  cursor: pointer;
 }
