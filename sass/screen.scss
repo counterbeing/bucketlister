@@ -13,6 +13,9 @@ $notBlack: #222222;
 $darkRed: #8C3A2B;
 $brightRed: #EE6952;
 
+body, html {
+  height:100%
+ }
 
 
 @font-face {
@@ -217,12 +220,11 @@ textarea{
   position: absolute;
   z-index: -100;
   width: 50%;
-  height: 100%;
+  min-height: 100%;
   top:0px;
   bottom: 0px;
   right: 0px;
   background-color: $darkRed;
-  min-height: 100px;
 }
 
 .create-new-goal{

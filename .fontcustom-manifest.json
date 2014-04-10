@@ -1,13 +1,13 @@
 {
   "checksum": {
-    "previous": "90f91f194e4828caec5940e0fe3e5eb857f9da4614e52dcd06eb6d16e5cbec4c",
-    "current": "90f91f194e4828caec5940e0fe3e5eb857f9da4614e52dcd06eb6d16e5cbec4c"
+    "previous": "abb8627ceccfa694cff0ec608725d7df9cde06b518a91d34615ccca5b5796c05",
+    "current": "abb8627ceccfa694cff0ec608725d7df9cde06b518a91d34615ccca5b5796c05"
   },
   "fonts": [
-    "app/assets/fonts/fontcustom_90f91f194e4828caec5940e0fe3e5eb8.ttf",
-    "app/assets/fonts/fontcustom_90f91f194e4828caec5940e0fe3e5eb8.svg",
-    "app/assets/fonts/fontcustom_90f91f194e4828caec5940e0fe3e5eb8.woff",
-    "app/assets/fonts/fontcustom_90f91f194e4828caec5940e0fe3e5eb8.eot"
+    "app/assets/fonts/fontcustom_abb8627ceccfa694cff0ec608725d7df.ttf",
+    "app/assets/fonts/fontcustom_abb8627ceccfa694cff0ec608725d7df.svg",
+    "app/assets/fonts/fontcustom_abb8627ceccfa694cff0ec608725d7df.woff",
+    "app/assets/fonts/fontcustom_abb8627ceccfa694cff0ec608725d7df.eot"
   ],
   "glyphs": {
     "check": {
@@ -50,6 +50,7 @@
     },
     "preprocessor_path": "",
     "quiet": false,
+    "skip_first": false,
     "templates": [
       "scss",
       "preview"

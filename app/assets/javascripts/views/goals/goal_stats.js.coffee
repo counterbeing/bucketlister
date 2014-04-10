@@ -7,10 +7,8 @@ class Bucketlister.Views.GoalStats extends Backbone.View
     @collection.on 'reset remove', @render, @      
 
   events: 
-    "click .todo": ""   
-    "click .done": ""   
-
-  
+    "click .todo": "navToDesired"   
+    "click .done": "navToDesired"   
 
   render: -> 
     incomplete = @collection.filterIncomplete().length

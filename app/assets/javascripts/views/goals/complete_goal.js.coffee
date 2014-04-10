@@ -3,6 +3,7 @@ class Bucketlister.Views.CompleteGoal extends Backbone.View
   attributes:
     class: 'goal'
   render: -> 
+    console.log 'resdering complete'
     $(@el).html(@template(goal: @model))
     @
 
